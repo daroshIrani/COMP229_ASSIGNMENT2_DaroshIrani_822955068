@@ -10,15 +10,14 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap-utilities.min.css" integrity="sha512-/j+mUkUn8RkWly6SVmNCaTNXRhoZAhe/mDv3+EgwjBEhQemU2smhHIDrAiC+qE3GpnwBKLd//8X2yq2axnJLnw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap-utilities.rtl.min.css" integrity="sha512-gZkxis3omp82ModtP2XWqVg8X6BEsAFd7r+i0v6iYAl9gKXKQ03BSOEVWQizgW6Gvo+rkJJGdbjocGvitsAxMg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./content/app.css"> <!-- Allows us to get style sheet from public/content/app.css  -- >This is what is sent to client side to load from there
-                                                        -- PUBLIC FOLDER WILL LOAD CONTENT AND SEND TO CLIENT SIDE - WE WORK WITH HTMML FILES AS STATIC FILES TO PERFORM THE SENDING-->
+        <link rel="stylesheet" href="./content/images/app.css"> <!-- This line will allow us to load the static page content from the public folder--> 
     </head>
     <body>
 
         <!-- Navigation -->
         
         <header>
-            <%- include('components/header.ejs'); %> <!-- '%- include' is signature of code to instruct the redirection as noted below to FOLDERS thast why theres the '-' after % - 
+            <%- include('partials/header.ejs'); %> <!-- '%- include' is signature of code to instruct the redirection as noted below to FOLDERS thast why theres the '-' after % - 
                                                         EJS gives us a way to reuse components 
                                                         and the contents acocrdingly to put into components ... so here we redirect header to get components 
                                                         from our components/header.ejs directory (visible in file/folder structure) you have to 'include' with html tags --> 
@@ -34,7 +33,7 @@
 
         <!-- Footer-->
         <Footer>
-            <%- include('components/footer.ejs'); %> <!--EJS gives us a way to reuse components and the contents acocrdingly to put into components ... 
+            <%- include('partials/footer.ejs'); %> <!--EJS gives us a way to reuse components and the contents acocrdingly to put into components ... 
                                                         so here we redirect footer to get components from our components/footer.ejs directory (visible on left side) -->
         </Footer>
 

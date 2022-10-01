@@ -2,14 +2,15 @@ import {Router} from "express";
 // Importing the functions from controller to run here
 import { displayaboutPage, displayhomePage, displayservicesPage, displaycontactPage, displayprojectsPage } from "../controllers/index.controller.server.js";
 
-const router = Router();
+const indexRouter = Router();
 
 // setting the functions to run from the controllers as the router is directed to specific URL's
-router.get('/', displayhomePage);
-router.get('/home', displayhomePage);
-router.get('/services', displayservicesPage);
-router.get('/about', displayaboutPage);
-router.get('/contact', displaycontactPage);
-router.get('/projects', displayprojectsPage);
+indexRouter.get('/', displayhomePage);
+indexRouter.get('/home', displayhomePage);
+indexRouter.get('/services', displayservicesPage);
+indexRouter.get('/about', displayaboutPage);
+indexRouter.get('/contact', displaycontactPage);
+indexRouter.get('/projects', displayprojectsPage);
 
-export default router;
+// exporting the router to be used in app.js
+export default indexRouter;

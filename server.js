@@ -4,12 +4,12 @@ import debug from 'debug';
 debug('comp-229');
 import http from 'http';
 
-import app from './app/app.js';
+import index from './app/index.js';
 
 const PORT = normalizePort(process.env.PORT || 3000);
-app.set('port', PORT);
+index.set('port', PORT);
 
-const server = http.createServer(app);
+const server = http.createServer(index);
 
 server.listen(PORT);
 server.on('error', onError);
