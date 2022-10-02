@@ -16,6 +16,12 @@ export function displayservicesPage(req,res,next){
     res.render('index', {title:"Services", page:'services'});
 }
 
+// rendereing the second template other than index - contact me template stored under views
 export function displaycontactPage(req,res,next){
-    res.render('index', {title:"Contact", page:'contact'});
+    res.render('contactme', {title:"Contact Me", page:'contact'});
 }
+
+export function displayresumeMe(req,res,next){
+    res.render('contactme', {title:"Darosh Irani Resume", page : "resumeMe"})
+}
+

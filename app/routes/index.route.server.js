@@ -1,6 +1,6 @@
 import {Router} from "express";
 // Importing the functions from controller to run here
-import { displayaboutPage, displayhomePage, displayservicesPage, displaycontactPage, displayprojectsPage } from "../controllers/index.controller.server.js";
+import { displayaboutPage, displayhomePage, displayservicesPage, displaycontactPage, displayprojectsPage, displayresumeMe } from "../controllers/index.controller.server.js";
 
 const indexRouter = Router();
 
@@ -11,6 +11,7 @@ indexRouter.get('/services', displayservicesPage);
 indexRouter.get('/about', displayaboutPage);
 indexRouter.get('/contact', displaycontactPage);
 indexRouter.get('/projects', displayprojectsPage);
+indexRouter.get('/resumeMe', displayresumeMe);
 
 // exporting the router to be used in app.js
 export default indexRouter;
