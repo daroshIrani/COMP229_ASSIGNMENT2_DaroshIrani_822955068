@@ -1,11 +1,11 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src = "./content/images/Logo1.jpg" height="100" alt = "Logo1"> Darosh Irani</a> 
+    <div class="container-xl">
+      <a class="navbar-brand <%=(page == 'home') ? 'active' : ''; %>" aria-current="page" href="/home"" ><img src = "./content/images/Logo1.jpg" height="100" alt = "Logo1"> Darosh Irani</a> 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-center text-center" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav justify-content-end">
           <li class="nav-item">
             <a class="nav-link <%=(page == 'home') ? 'active' : ''; %>" aria-current="page" href="/home"><i class="fa-solid fa-house"></i> Home</a> <!--TheEJS include 
                                                                                                                     statement goes inside the class. It means
