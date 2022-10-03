@@ -1,7 +1,14 @@
+<!--Author : Darosh Irani
+// Student ID : 822955068
+// Filename : contact.ejs
+// Dated : October 2nd, 2022 -->
+
+<!-- Template source - https://getbootstrap.com/ -->
+
 <div class = "container-fluid" align = "center">
     <h1><%= title %></h1>
     <div class = "container-sm">
-    <form class="row g-3 needs-validation" novalidate>
+    <form class="row g-3 needs-validation" id = "contactForm" action = "" method = "POST" >
         <div class="col-md-4">
           <label for="validationCustom01" class="form-label">First name</label>
           <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
@@ -69,7 +76,7 @@
           </div>
         </div>
         <div class="col-12">
-          <button class="btn btn-primary" type="submit" formaction="./home" formmethod="get">Submit</button>
+          <button class="btn btn-primary" id = "contactFormbutton" type="submit" formaction="./home" formmethod="get">Submit</button> <!-- formaction attribute redirects the form submission to a specific url and choice of method for submission is through a 'get' since the router is setup as 'indexRouter.get'--> 
           <button class="btn btn-primary" type="reset" >Reset</button>
         </div>
       </form>
